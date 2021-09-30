@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 16px;
+}
+@font-face {
+  font-family: SourceSans Pro;
+  src: url(../font/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: FontAwesome Free;
+  src: url(../css/fontawesome-free-5.15.4-web/css/all.min.css);
+}
+.box-img img {
+  width: 100%;
+}
+.section-all {
+  padding: 2rem 0;
+}
+.title_section1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: Poppins;
+  font-weight: 400;
+  color: #0095da;
+  margin-bottom: 0;
+}
+.title_section2 {
+  font-family: SourceSans Pro;
+  font-size: 2.125rem;
+  font-weight: 600;
+  color: #071d61;
+}
+.title-box {
+  font-family: SourceSans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #071d61;
+}
+.box_ ul {
+  padding-left: 0;
+}
+.box_ ul li {
+  list-style: none;
+  border-bottom: 1px solid #cfd4d6;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+/* .box_ ul li::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+} */
+.box_ ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.875rem;
+  line-height: 1.8;
+}
+.box_service2 .box-img {
+  position: relative;
+}
+.box_service2 .box-img::before {
+  content: "";
+  width: 7rem;
+  height: 8rem;
+  background-image: url(../images/Dot\ Grid.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box_service2 .box-img::after {
+  content: "";
+  width: 6rem;
+  height: 7rem;
+  background-image: url(../images/Dot\ Grid-1.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.box_service2 .box-img img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+@media (max-width: 480px) {
+  .title_section2 {
+    font-size: 1.5rem;
+  }
+  .title_section1 {
+    font-size: 0.75rem;
+  }
+  .title-box {
+    text-align: center;
+  }
+}
